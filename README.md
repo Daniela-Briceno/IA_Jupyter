@@ -17,10 +17,35 @@ No quieres preocuparte por la normalización o escalado de datos
 Tienes un dataset pequeño o mediano
 Necesitas saber por qué se llegó a cierta predicción
 
+Algoritmos de clustering no supervisado: DBSCAN y K-Means
+🎯 PROPÓSITO DE DBSCAN
+Objetivo principal: Detectar áreas densas de puntos y agruparlos, sin necesidad de definir cuántos clusters hay, y separando automáticamente los outliers (ruido).
+✅ Ideal para:
+Datos con formas irregulares (no circulares)
+Datos con ruido o outliers
+Agrupaciones con diferente densidad
+Cuando no sabes cuántos grupos hay
+
 DBSCAN: Es un algoritmo de agrupamiento (clustering) que forma clusters en base a la densidad de puntos en el espacio.
 Agrupa puntos que están cerca unos de otros (eps) y forman regiones densas (min_samples)
 Detecta y separa automáticamente los outliers (ruido)
 ✅ Útil cuando los clusters no tienen forma circular y hay ruido en los datos.
+
+🎯 PROPÓSITO DE K-MEANS
+Objetivo principal:Agrupar datos en K grupos definidos por centroides, minimizando la distancia entre los puntos y su centro.
+✅ Ideal para:
+Datos con clusters esféricos o circulares
+Agrupaciones con densidades similares
+Cuando ya sabes cuántos grupos necesitas (k)
+Agrupaciones rápidas y eficientes
+
+K-Means: Es un algoritmo de agrupamiento (clustering) no supervisado que forma K clusters basados en la distancia a centroides (puntos centrales).
+✅¿Cuándo usar K-Means?
+Cuando sabes cuántos clusters quieres (k)
+Cuando los datos tienen grupos bien separados y de forma circular
+Cuando necesitas un algoritmo rápido y simple
+Cuando no te preocupan los outliers
+Cuando haces segmentación inicial o exploratoria
 
 Clusters:  Son grupos de datos similares entre sí, creados por un algoritmo de clustering.
 Cada cluster agrupa puntos que comparten alguna característica común o están cerca entre sí en el espacio.
