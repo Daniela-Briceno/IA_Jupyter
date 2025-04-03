@@ -56,6 +56,11 @@ Es un tipo de gráfico que muestra la relación entre dos variables numéricas.
 Cada punto en el gráfico representa un par de valores (X, Y) de una observación.
 ✅ Sirve para visualizar patrones, agrupaciones o tendencias.
 
+MLP:
+
+Tensores: Un tensor es una estructura de datos multidimensional, parecida a un array o matriz, que puede tener 0, 1, 2 o más dimensiones.
+
+
 Clase: En POO, una clase es una plantilla o modelo que define cómo debe ser un objeto: qué atributos tiene y qué puede hacer (métodos).
 ✅ La clase es como una receta o plano.
 
