@@ -4,12 +4,34 @@ Es un tipo de aprendizaje automático (Machine Learning) en el que un modelo apr
 - El objetivo es que el modelo aprenda la relación entre los inputs y los outputs para poder predecir resultados en datos nuevos.
 
 ## Regresion lineal
-Es un modelo estadístico que busca encontrar la relación lineal entre una variable independiente (X) y una dependiente (Y).
-Se representa con la fórmula: Y = aX + b
-Donde:
-a es la pendiente (cuánto cambia Y si X cambia)
-b es la ordenada al origen (valor de Y cuando X = 0)
+Es un modelo estadístico que busca encontrar la relación lineal entre una variable independiente (X) y una dependiente (Y).  
+Se representa con la fórmula: **Y = aX + b**  
+Donde:  
+- **a** es la pendiente (cuánto cambia Y si X cambia)
+- **b** es la ordenada al origen (valor de Y cuando X = 0)  
 ✅ Se usa para predecir valores o detectar tendencias.
+
+## Regresión logística
+
+Es un modelo de clasificación que predice la probabilidad de que una observación pertenezca a una clase.  
+A diferencia de la regresión lineal, su salida es una **probabilidad entre 0 y 1**, que se transforma en una clase (0 o 1).
+
+Se representa con la función sigmoide:
+
+**P(Y = 1 | X) = 1 / (1 + e^(-z))**  
+Donde:  
+- **z = aX + b** (igual que en regresión lineal)  
+- **e** es el número de Euler (~2.718)  
+- **a** son los coeficientes, y **b** es el sesgo
+
+El modelo predice la clase final usando un umbral (por defecto: 0.5):  
+- Si P ≥ 0.5 → clase 1  
+- Si P < 0.5 → clase 0
+
+✅ Se utiliza para clasificación binaria como:
+- Diagnóstico médico (enfermo o sano)  
+- Correo spam o no spam  
+- Aprobación o rechazo de crédito
 
 ## Árbol de Decisión
 Es un algoritmo de aprendizaje automático supervisado que se utiliza para clasificación o regresión. Funciona como un diagrama tipo árbol, donde cada nodo representa una decisión basada en los valores de las variables.
