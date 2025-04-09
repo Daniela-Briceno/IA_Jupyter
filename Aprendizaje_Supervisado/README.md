@@ -62,3 +62,37 @@ Este enfoque reduce el overfitting, mejora la generalización y suele entregar m
 - Trabajas con un dataset pequeño o grande
 - No necesitas un modelo tan fácil de interpretar como un árbol individual
 - Buscas un buen desempeño sin mucho ajuste de hiperparámetros
+
+## Gradient Boosting
+Es un algoritmo de aprendizaje supervisado que entrena modelos de forma secuencial, donde cada nuevo modelo intenta  
+corregir los errores cometidos por el anterior.  
+- Generalmente utiliza árboles de decisión como modelos base (modelos débiles).
+A diferencia de Random Forest (que entrena los árboles en paralelo), Gradient Boosting ajusta los árboles uno por uno, optimizando los errores residuales.  
+
+✅ **¿Cuándo usar Gradient Boosting?**
+- Buscas alta precisión en clasificación o regresión
+- Tienes un dataset limpio y de tamaño medio
+- Quieres un modelo más potente que Random Forest
+- Estás dispuesto a ajustar hiperparámetros para obtener mejor rendimiento
+- No necesitas interpretabilidad absoluta (es más complejo que un árbol único)
+
+## XGBoost
+Es una versión mejorada y optimizada de Gradient Boosting.  
+Ofrece mejor rendimiento y eficiencia en tiempo y memoria.  
+Es uno de los algoritmos más usados en la industria y en competencias como Kaggle.  
+
+XGBoost incorpora:  
+- Regularización para evitar overfitting
+- Manejo nativo de datos faltantes
+- Entrenamiento paralelo y distribución en GPU/cluster
+- Poda automática y optimización avanzada
+
+✅ **¿Cuándo usar XGBoost?**
+- Buscas máximo rendimiento predictivo
+- Trabajas con datasets grandes o con muchas variables
+- Quieres una alternativa escalable a Gradient Boosting
+- Estás resolviendo un problema de clasificación o regresión estructurada
+- No necesitas máxima interpretabilidad, pero sí precisión  
+
+
+
