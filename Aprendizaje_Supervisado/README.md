@@ -34,12 +34,31 @@ El modelo predice la clase final usando un umbral (por defecto: 0.5):
 - Aprobación o rechazo de crédito
 
 ## Árbol de Decisión
-Es un algoritmo de aprendizaje automático supervisado que se utiliza para clasificación o regresión. Funciona como un diagrama tipo árbol, donde cada nodo representa una decisión basada en los valores de las variables.
-✅ ¿Cuándo usar un árbol de decisión?
-Necesitas un modelo interpretable y fácil de explicar
-Trabajas con datos estructurados (columnas tipo Excel o base de datos)
-Tienes tanto variables categóricas como numéricas
-Quieres resolver problemas de clasificación o regresión
-No quieres preocuparte por la normalización o escalado de datos
-Tienes un dataset pequeño o mediano
-Necesitas saber por qué se llegó a cierta predicción
+Es un algoritmo de aprendizaje automático supervisado que se utiliza para **clasificación o regresión**.  
+Funciona como un diagrama tipo árbol, donde cada nodo representa una decisión basada en los valores de las variables.
+
+✅ **¿Cuándo usar un árbol de decisión?**
+- Necesitas un modelo interpretable y fácil de explicar
+- Trabajas con datos estructurados (columnas tipo Excel o base de datos)
+- Tienes tanto variables categóricas como numéricas
+- Quieres resolver problemas de clasificación o regresión
+- No quieres preocuparte por la normalización o escalado de datos
+- Tienes un dataset pequeño o mediano
+- Necesitas saber por qué se llegó a cierta predicción  
+
+
+## Random Forest
+Es un algoritmo que combina múltiples árboles de decisión para mejorar la precisión y robustez del modelo.  
+Funciona creando muchos árboles (generalmente entrenados con subconjuntos aleatorios de los datos) y tomando una decisión en conjunto:
+- **Clasificación:** votación mayoritaria
+- **Regresión:** promedio de predicciones  
+Este enfoque reduce el overfitting, mejora la generalización y suele entregar mejor rendimiento que un solo árbol.  
+
+✅ **¿Cuándo usar Random Forest?**
+- Quieres mejorar la precisión respecto a un solo árbol de decisión
+- Tienes datos estructurados con muchas variables
+- Quieres un modelo robusto frente a ruido o overfitting
+- Tienes tanto variables categóricas como numéricas
+- Trabajas con un dataset pequeño o grande
+- No necesitas un modelo tan fácil de interpretar como un árbol individual
+- Buscas un buen desempeño sin mucho ajuste de hiperparámetros
