@@ -1,6 +1,7 @@
 # Clustering
 Es una técnica de aprendizaje no supervisado que busca agrupar datos similares en subconjuntos llamados clusters o grupos,  
 sin necesidad de etiquetas previas.  
+
 **¿Cómo funciona?**
 - El algoritmo analiza las características de los datos (variables)
 - Calcula una métrica de similitud (como la distancia Euclídea)
