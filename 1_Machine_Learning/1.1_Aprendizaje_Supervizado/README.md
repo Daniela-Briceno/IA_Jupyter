@@ -46,7 +46,6 @@ Funciona como un diagrama tipo árbol, donde cada nodo representa una decisión 
 - Tienes un dataset pequeño o mediano
 - Necesitas saber por qué se llegó a cierta predicción  
 
-
 ## Random Forest
 Es un algoritmo que combina múltiples árboles de decisión para mejorar la precisión y robustez del modelo.  
 Funciona creando muchos árboles (generalmente entrenados con subconjuntos aleatorios de los datos) y tomando una decisión en conjunto:
@@ -67,7 +66,7 @@ Este enfoque reduce el overfitting, mejora la generalización y suele entregar m
 Es un algoritmo de aprendizaje supervisado que entrena modelos de forma secuencial, donde cada nuevo modelo intenta  
 corregir los errores cometidos por el anterior.  
 - Generalmente utiliza árboles de decisión como modelos base (modelos débiles).
-A diferencia de Random Forest (que entrena los árboles en paralelo), Gradient Boosting ajusta los árboles uno por uno, optimizando los errores residuales.  
+A diferencia de Random Forest (que entrena los árboles en paralelo), Gradient Boosting ajusta los árboles uno por uno, optimizando los errores residuales. 
 
 ✅ **¿Cuándo usar Gradient Boosting?**
 - Buscas alta precisión en clasificación o regresión
@@ -94,5 +93,26 @@ XGBoost incorpora:
 - Estás resolviendo un problema de clasificación o regresión estructurada
 - No necesitas máxima interpretabilidad, pero sí precisión  
 
+## SVM
+Es un algoritmo supervisado utilizado para clasificación y regresión, aunque su uso más común es para clasificación binaria.  
+La idea principal es encontrar el hiperplano óptimo que maximiza el margen entre las clases, es decir, que separa los datos de la mejor manera posible.  
+Puede usarse para problemas lineales o no lineales, aplicando transformaciones del espacio (kernels).  
 
+✅ **¿Cuándo usar SVM?**
+- Tienes un dataset pequeño o mediano, bien balanceado
+- Las clases no son fácilmente separables en el espacio original
+- Requieres buena precisión en clasificación binaria
+- Quieres probar con diferentes funciones kernel (linear, rbf, poly, sigmoid)
+- No necesitas interpretabilidad simple (SVM no es tan explicativo como un árbol)
 
+## KNN (K-Nearest Neighbors)
+Es un algoritmo supervisado que se basa en el principio de cercanía.  
+No entrena un modelo como tal, sino que guarda los datos y para cada nueva predicción busca los k vecinos más cercanos (usualmente con distancia Euclídea).  
+- Clasificación: votación mayoritaria entre vecinos
+- Regresión: promedio de los valores de los vecinos
+
+✅ **¿Cuándo usar KNN?**
+- Buscas un algoritmo simple y rápido de implementar
+- Tu dataset no es muy grande (KNN no escala bien)
+- Los datos no tienen muchas variables (evitar maldición de dimensionalidad)
+- Quieres comparar como baseline con otros modelos
