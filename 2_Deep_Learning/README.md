@@ -10,19 +10,13 @@ para modelar y resolver problemas complejos como visión por computador, procesa
 | Funciona bien con pocos datos | Necesita grandes cantidades de datos |
 | Modelos más simples     | Modelos muy complejos       |
 
----
-
 ## Tipos de redes neuronales
-
 - **Redes densas o feedforward**: ideales para problemas generales de clasificación o regresión.
 - **Redes convolucionales (CNN)**: especializadas en imágenes y procesamiento espacial.
 - **Redes recurrentes (RNN, LSTM, GRU)**: diseñadas para trabajar con datos secuenciales.
 - **Transformers**: para NLP y visión moderna.
 
----
-
 ## Cuándo usar Deep Learning
-
 - Cuando tienes **gran cantidad de datos**.
 - Cuando los patrones no son fácilmente lineales o definidos.
 - Cuando el ML tradicional se queda corto en rendimiento.
