@@ -1,0 +1,5 @@
+id,fecha,producto,categoria,ventas_mensuales,costos
+1,2023-01-15,Zapatos,A,200000,120000
+2,2023-01-16,Camisa,B,150000,80000
+3,2023-01-17,Pantalón,C,180000,100000
+4,2023-01-18,Zapatos,A,210000,130000
